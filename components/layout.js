@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Alert from './alert'
 
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
@@ -61,6 +62,11 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
+
+      <Alert type="error">an error</Alert>
+
+      <Alert type="success">a success</Alert>
+
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">

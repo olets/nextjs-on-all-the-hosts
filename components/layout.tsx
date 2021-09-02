@@ -6,7 +6,13 @@ import Alert from './alert'
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   return (
     <div className="max-w-xl px-4 mt-12 mb-24">
       <Head>

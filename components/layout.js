@@ -25,6 +25,9 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script data-goatcounter="https://olets.goatcounter.com/count"
+              async src="//gc.zgo.at/count.js">
+        </script>
       </Head>
       <header className="flex flex-col items-center">
         {home ? (

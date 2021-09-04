@@ -28,10 +28,10 @@ jobs:
     - name: Build
       run: |
         npm ci
-        npm run build --if-present
-        npm test
+        npm run build
+        npm run export
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
-        folder: .next
+        folder: out

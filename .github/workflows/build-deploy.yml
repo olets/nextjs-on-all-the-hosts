@@ -27,8 +27,8 @@ jobs:
     - name: Build
       run: |
         npm ci
-        npm run build
-        npm run export
+        next build
+        next export
         touch out/.nojekyll
 
     - name: Deploy

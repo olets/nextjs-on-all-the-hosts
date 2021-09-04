@@ -6,6 +6,8 @@ import Alert from './alert'
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
 
+const imgBasename = '400x400-mesh.jpg'
+
 export default function Layout({ children, home }) {
   return (
     <div className="max-w-xl px-4 mt-12 mb-24">
@@ -29,7 +31,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src={imgBasename}
               className="rounded-full"
               height={144}
               width={144}
@@ -43,7 +45,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src={imgBasename}
                   className="rounded-full"
                   height={108}
                   width={108}

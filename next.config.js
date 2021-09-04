@@ -7,8 +7,10 @@ if (isGithubActions) {
   repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 }
 
-console.log(`repo: ${repo}`)
-
 module.exports = {
-  assetPrefix: isGithubActions ? `/${repo}/` : ''
+  assetPrefix: isGithubActions ? `/${repo}/` : '',
+  images: {
+    loader: 'imgix',
+    path: 'https://olets.imgix.net/',
+  },
 }

@@ -4,3 +4,5 @@ Visit:
 
 - Netlify: https://olets-learn-nextjs.netlify.app/
 - Vercel: https://olets-learn-nextjs.vercel.app/
+- Heroku: https://olets-learn-nextjs.herokuapp.com/
+- GitHub Pages: https://olets.github.io/nextjs-tutorial/

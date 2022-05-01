@@ -15,6 +15,6 @@ module.exports = {
   basePath: basePath,
   images: {
     loader: 'imgix',
-    path: 'https://olets.imgix.net/',
+    path: 'https://olets--nextjs-on-all-the-hosts.imgix.net/',
   },
 }
